@@ -7,3 +7,6 @@ class Solution:
             return False
 
 #runs in 56 ms (75.96% faster) and 12.9MB space (100% less space)
+
+# one liner return str(x) == str(x)[::-1]
+#runs in 32 ms (99.72% faster) and 12.7 Mb space (100% less space again).
