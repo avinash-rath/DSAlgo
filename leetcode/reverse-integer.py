@@ -18,3 +18,6 @@ class Solution:
                 return 0
             else :
                 return x
+
+            
+# runs in 28 ms (77.39% faster) and uses 12.7 mb, (less than 100% submissions, WTF!)  
