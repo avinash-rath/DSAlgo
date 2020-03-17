@@ -60,3 +60,28 @@ class Solution:
                     if var!='{':return False
         return True if len(tracker) == 0 else False
 #Runtime: 32 ms, faster than 35.44%     Memory Usage: 13.1 MB, less than 88.70%
+
+'''
+#Works only for the specific problem but significantly faster
+
+#Runtime: 28 ms, faster than 71.47% of Python3 online submissions for Valid Parentheses.
+#Memory Usage: 13.1 MB, less than 93.91% of Python3 online submissions for Valid Parentheses.
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        pointer = 0
+        last = []
+        openers={'(':')','[':']','{':'}'}
+        for i in s:
+            if i == '(' or i == '[' or i == '{':
+                pointer += 1
+                last.append(i)
+            if pointer == 0:
+                return False
+            if pointer > 0:
+                if i == ')' or i == ']' or i == '}':
+                    if i!=openers[last.pop()]:
+                        return False
+                    else : pointer-=1
+        return True if pointer == 0 else False
+'''
