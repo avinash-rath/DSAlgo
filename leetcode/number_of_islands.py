@@ -52,3 +52,32 @@ class Solution:
             print(i)
         return islands
        
+'''
+#faster solution using dfs and set
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        if len(grid) <1:
+            return 0
+        islands = 0
+        land = set()
+        for r in range(len(grid)):
+            for c in range(len(grid[0])):
+                if grid[r][c] == '1':
+                    land.add((r,c))
+        def dfs(r,c):
+            if (r,c) in land:
+                land.remove((r,c))
+                dfs(r+1,c)
+                dfs(r-1,c)
+                dfs(r,c+1)
+                dfs(r,c-1)
+        while land:
+            cell = land.pop()
+            land.add(cell)
+            
+            dfs(cell[0],cell[1])
+            islands+=1
+            
+        return islands
+                    
+'''
