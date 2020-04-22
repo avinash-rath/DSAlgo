@@ -52,3 +52,27 @@ class Solution:
           return i
         left += nums[i]
       return -1
+     
+'''
+#O(n) time and O(n) space solution
+
+class Solution:
+    def pivotIndex(self, nums: List[int]) -> int:
+      
+      n=len(nums)
+      if n ==0:
+        return -1
+      left=[0]*n
+      add = 0
+      for i in range(1,n):
+        add += nums[-i]
+        left[-1-i]=add
+      add = 0
+      if add == left[0]:
+        return 0
+      for i in range(1,n):
+        add += nums[i-1]
+        if add == left[i]:
+          return i
+      return -1
+'''
