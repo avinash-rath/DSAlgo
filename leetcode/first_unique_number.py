@@ -73,6 +73,41 @@ from collections import OrderedDict
 class FirstUnique:
 
     def __init__(self, nums: List[int]):
+        self.d = OrderedDict()
+        self.repeated = set()
+        for i in nums:
+            if i in self.d:
+                self.d[i] += 1
+            else:
+                self.d[i] = 1
+        for i in list(self.d.keys()):
+            if self.d[i] > 1:
+                self.repeated.add(i)
+                self.d.pop(i)
+
+    def showFirstUnique(self) -> int:
+        return -1 if not self.d else next(iter(self.d.items()))[0]
+
+    def add(self, value: int) -> None:
+        if value in self.repeated:
+            return
+        if value in self.d:
+            self.repeated.add(value)
+            self.d.pop(value)
+        else:
+            self.d[value] = 1
+
+
+# Your FirstUnique object will be instantiated and called as such:
+# obj = FirstUnique(nums)
+# param_1 = obj.showFirstUnique()
+# obj.add(value)
+'''
+#super slow.
+from collections import OrderedDict
+class FirstUnique:
+
+    def __init__(self, nums: List[int]):
         self.q = set()
         self.l = []
         self.s = set()
@@ -95,8 +130,4 @@ class FirstUnique:
             self.s.add(value)
             self.l.append(value)
         self.q.add(value)
-
-# Your FirstUnique object will be instantiated and called as such:
-# obj = FirstUnique(nums)
-# param_1 = obj.showFirstUnique()
-# obj.add(value)
+'''
