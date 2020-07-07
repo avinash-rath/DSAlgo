@@ -25,9 +25,9 @@ class Solution:
         mydict[0] = 1
         for i in nums:
           add += i
-          if (add-k) in mydict.keys():
+          if (add-k) in mydict:
             count += mydict[add-k]
-          if add in mydict.keys():
+          if add in mydict:
             mydict[add] += 1
           else: 
             mydict[add] = 1
