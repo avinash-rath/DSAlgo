@@ -3,3 +3,7 @@
 
 #settings
 settings.json
+
+# Test files
+Test.java
+test.py
