@@ -1,0 +1,5 @@
+# Output files
+*.class
+
+#settings
+settings.json
