@@ -29,6 +29,16 @@ Note: The input will be a non-empty word consisting of uppercase and lowercase l
 
 */
 
+/*
+Extremely slow regex solution
+
+class Solution {
+    public boolean detectCapitalUse(String word) {
+        return word.matches("[A-Z]*|.[a-z]*");
+    }
+}
+*/
+
 class Solution {
     public boolean detectCapitalUse(String word) {
         if(word.length() < 2) {
