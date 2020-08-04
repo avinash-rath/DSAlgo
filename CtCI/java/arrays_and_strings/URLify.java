@@ -1,14 +1,14 @@
+package arrays_and_strings;
+
 /**
- * 1.3
- * URLify
- * Write a method to replace all spaces in a string with "%20". You may assume that
- * the string has sufficient spece at the end to hold the additional characters, and
- * that you are gven the true length of the string.
+ * 1.3 URLify Write a method to replace all spaces in a string with "%20". You
+ * may assume that the string has sufficient spece at the end to hold the
+ * additional characters, and that you are gven the true length of the string.
  * 
- * NOTE : in java use a character array instead of string as string objects are immutable.
+ * NOTE : in java use a character array instead of string as string objects are
+ * immutable.
  * 
- * input - "Mr John Smith    ", 13
- * output- "Mr%20John%20Smith"
+ * input - "Mr John Smith ", 13 output- "Mr%20John%20Smith"
  */
 public class URLify {
     // public String urlify(String str) { // using StringBuilder, so that it is one pass. 

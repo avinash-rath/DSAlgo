@@ -1,3 +1,5 @@
+package arrays_and_strings;
+
 import java.util.*;
 /**
  * 1.2

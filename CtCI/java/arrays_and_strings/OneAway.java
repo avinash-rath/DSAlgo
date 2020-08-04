@@ -1,13 +1,10 @@
+package arrays_and_strings;
+
 /**
- * 1.5
- * There are three types of edits that can be performed on strings: insert
- * a char, remove a char, or replace a char. Given two strings, write a 
- * function to check if ther are one edit(or zero edits) away.
- * EXAMPLE
- * pale,ple -> true
- * pales,pale -> true
- * pale,bale -> true
- * pale,bake -> false
+ * 1.5 There are three types of edits that can be performed on strings: insert a
+ * char, remove a char, or replace a char. Given two strings, write a function
+ * to check if ther are one edit(or zero edits) away. EXAMPLE pale,ple -> true
+ * pales,pale -> true pale,bale -> true pale,bake -> false
  */
 
 public class OneAway {
