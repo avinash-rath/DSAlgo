@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * 1.8 Zero Matrix
+ * Write an algorithm such that if an element in an MxN matrix is 0,
+ * it's entire row and column are set to 0.
+ */
+
 public class ZeroMatrix {
     public void makeZero(int [][] grid) {
         List<int[]> zeroes = new ArrayList<int[]>();
