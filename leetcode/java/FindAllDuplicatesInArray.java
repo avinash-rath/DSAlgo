@@ -32,3 +32,18 @@ class Solution {
 
 */
 
+class Solution {
+    public List<Integer> findDuplicates(int[] nums) {
+        List<Integer> ans = new ArrayList<Integer>();
+        int[] counts = new int[nums.length + 1];// given in problem statement that elements are smaller than the length of the array.
+        for(int i: nums) {
+            counts[i]++;
+        }
+        for(int i = 0; i< counts.length; i++) {
+            if(counts[i]==2) {
+                ans.add(i);
+            }
+        }
+        return ans;
+    }
+}
