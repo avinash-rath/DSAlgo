@@ -15,4 +15,7 @@ public class Node<T> {
         this.data = data;
         this.next = next;
     }
+    public boolean hasNext() {
+        return next != null;
+    }
 }
