@@ -52,7 +52,9 @@ public class Partition {
                 tail = temp;
             }
         }
-        tail.next = null;
+        tail.next = null; // remove the cycles.
         return head;
     }
+
+    // another approach to make the algorithm stable is to keep 2 separate linkedlists  and then merge them
 }
