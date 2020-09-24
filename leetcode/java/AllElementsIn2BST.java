@@ -39,7 +39,36 @@ Constraints:
 
 
 */
-
+class Solution {
+    public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
+        LinkedList<Integer> t1, t2, ans;
+        t1 = new LinkedList<Integer>();
+        t2 = new LinkedList<Integer>();
+        ans = new LinkedList<Integer>();
+        inOrder(root1, t1);
+        inOrder(root2, t2);
+        while(!t1.isEmpty() && !t2.isEmpty()) {
+            if(t1.peekFirst() <= t2.peekFirst()) {
+                ans.add(t1.pollFirst());
+            } else {
+                ans.add(t2.pollFirst());
+            }
+        }
+        if(!t1.isEmpty()) {
+            ans.addAll(t1);
+        }
+        if(!t2.isEmpty()) ans.addAll(t2);
+        
+        return ans;
+    }
+    
+    private void inOrder(TreeNode root, List<Integer> list) {
+        if(root == null) return;
+        inOrder(root.left, list);
+        list.add(root.val);
+        inOrder(root.right, list);
+    }
+}
 
 /*
 // A bit slow solution using Collections.sort()
