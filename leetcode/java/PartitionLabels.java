@@ -20,7 +20,26 @@ Note:
     S will consist of lowercase English letters ('a' to 'z') only.
 
 */
-
+class Solution {
+    public List<Integer> partitionLabels(String s) {
+        int [] table = new int[26];
+        for(int i = 0; i<s.length(); i++ ) {
+            table[s.charAt(i) - 'a'] = i;
+        }
+        
+        List<Integer> ans = new ArrayList<Integer>();
+        int max = 0, count = 0;
+        for(int i = 0; i<s.length(); i++) {
+            max = Math.max(max, table[s.charAt(i) - 'a']);
+            count++;
+            if(max == i) {
+                ans.add(count);
+                count = 0;
+            }
+        }
+        return ans;
+    }
+}
 
 
 
