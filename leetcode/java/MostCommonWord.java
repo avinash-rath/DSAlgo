@@ -39,7 +39,54 @@ Submissions
 397,106
 */
 
+class Solution {
+    public String mostCommonWord(String paragraph, String[] ban) {
+        
+        Set<Character> puncts = new HashSet<>();
+        Collections.addAll(puncts, '!', '?', '\'', ';', '.', ' ', ',');
 
+        Set<String> banned = new HashSet<>(Arrays.asList(ban));
+        String res = "", word = "";
+        int max = 0;
+        
+        Map<String, Integer> map = new HashMap<String, Integer>();
+        
+        for(Character i : paragraph.toCharArray()){
+            if(!puncts.contains(i)){
+                i = Character.toLowerCase(i);
+                word += i;
+            }
+            else{
+                if(!banned.contains(word) && word.length() > 0){
+                    map.put(word, map.getOrDefault(word, 0) + 1);
+                    if(map.get(word) > max) {
+                        max = map.get(word);
+                        res = word;
+                    }
+                }
+                word = "";
+            } 
+             
+        }
+        if(!banned.contains(word) && word.length() > 0){
+                    map.put(word, map.getOrDefault(word, 0) + 1);
+                    if(map.get(word) > max) {
+                        max = map.get(word);
+                        res = word;
+                    }
+                }
+        
+        // for(String i : map.keySet()){
+        //     if(map.get(i) > max){
+        //         max = map.get(i);
+        //         res = i;
+        //     }
+        // }
+        return res;
+    }
+}
+
+/*
 class Solution {
     String ans;
     int max;
@@ -87,3 +134,4 @@ class Solution {
         }
     }
 }
+*/
