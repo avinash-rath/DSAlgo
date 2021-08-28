@@ -25,7 +25,7 @@ public class Game {
         Scanner sc = new Scanner(System.in);
         while(true) {
             updateGameState();
-            // clearConsole();
+            clearConsole();
             println(grid.toString());
             if(gameState == GameState.Ended) {
                 println("Thanks for playing!");
