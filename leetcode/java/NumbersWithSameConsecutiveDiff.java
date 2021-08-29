@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 Return all non-negative integers of length N such that the absolute difference between every two consecutive digits is K.
 
@@ -24,7 +29,7 @@ Note:
 0 <= K <= 9
 */
 
-class Solution {
+class NumbersWithSameConsecutiveDiff {
     public int[] numsSameConsecDiff(int N, int K) {
       if(N==1) return new int[] {0,1,2,3,4,5,6,7,8,9};
       List<Integer> list = new ArrayList<Integer>();

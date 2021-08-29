@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /*
 Write a program to check whether a given number is an ugly number.
 
@@ -29,7 +31,7 @@ Note:
 */
 
 
-class Solution {
+class UglyNumber {
     public boolean isUgly(int num) {
         if(num < 1) return false;
         while(num > 1) {

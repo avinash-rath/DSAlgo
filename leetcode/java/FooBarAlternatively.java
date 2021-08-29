@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /*
 1115. Print FooBar Alternately
 Medium
@@ -39,12 +41,12 @@ Input: n = 2
 Output: "foobarfoobar"
 Explanation: "foobar" is being output 2 times.
 */
-class FooBar {
+class FooBarAlternatively {
     private int n;
     private static int lock;
-    public FooBar(int n) {
+    public FooBarAlternatively(int n) {
         this.n = n;
-        this.lock = 1;
+        lock = 1;
     }
 
     public synchronized void foo(Runnable printFoo) throws InterruptedException {

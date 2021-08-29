@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.LinkedList;
+import java.util.List;
+
 /*
 Given two binary search trees root1 and root2.
 
@@ -39,7 +44,7 @@ Constraints:
 
 
 */
-class Solution {
+class AllElementsIn2BST {
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
         LinkedList<Integer> t1, t2, ans;
         t1 = new LinkedList<Integer>();

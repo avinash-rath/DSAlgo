@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /*
 1432. Max Difference You Can Get From Changing an Integer
 Medium
@@ -58,7 +60,7 @@ Submissions
 20,069
 */
 // clearly not a programmatic solution(but it's faster), check commented part below.
-class Solution {
+class MaxDiffByChangingOneInt {
     public int maxDiff(int num) {
         String a = ""+num;
         String b = ""+num;

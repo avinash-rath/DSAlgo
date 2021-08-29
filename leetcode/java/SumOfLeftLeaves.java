@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /*
 Find the sum of all left leaves in a given binary tree.
 
@@ -29,7 +31,7 @@ There are two left leaves in the binary tree, with values 9 and 15 respectively.
  *     }
  * }
  */
-class Solution {
+class SumOfLeftLeaves {
   int sum = 0;
   public int sumOfLeftLeaves(TreeNode root) {
     util(root, false);

@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
 
@@ -18,7 +23,7 @@ Output:
 
 /*
 //slow solution with set
-class Solution {
+class FindAllDuplicatesInArray {
     public List<Integer> findDuplicates(int[] nums) {
         Set<Integer> set = new HashSet<Integer>();
         List<Integer> ans = new ArrayList<Integer>();
@@ -32,7 +37,7 @@ class Solution {
 
 */
 
-class Solution {
+class FindAllDuplicatesInArray {
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> ans = new ArrayList<Integer>();
         int[] counts = new int[nums.length + 1];// given in problem statement that elements are smaller than the length of the array.

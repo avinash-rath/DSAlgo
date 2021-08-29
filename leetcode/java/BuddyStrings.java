@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 859. Buddy Strings
 Easy
@@ -45,7 +50,7 @@ Submissions
 187,866
 */
 
-class Solution {
+class BuddyStrings {
     public boolean buddyStrings(String A, String B) {
         if(A.length() != B.length()) return false;
         int [] table = new int[26];

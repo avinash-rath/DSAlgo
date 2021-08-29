@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /*
 Given a word, you need to judge whether the usage of capitals in it is right or not.
 
@@ -39,7 +41,7 @@ class Solution {
 }
 */
 
-class Solution {
+class DetectCapital {
     public boolean detectCapitalUse(String word) {
         if(word.length() < 2) {
             return true;

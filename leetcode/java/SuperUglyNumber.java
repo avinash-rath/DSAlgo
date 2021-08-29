@@ -1,3 +1,7 @@
+package leetcode.java;
+
+import java.util.Arrays;
+
 /*
 313. Super Ugly Number
 Medium
@@ -22,7 +26,7 @@ Note:
 
 
 */
-class Solution {
+class SuperUglyNumber {
     public int nthSuperUglyNumber(int n, int[] p) {
         int [] index = new int[p.length];
         int [] dp = new int[n];

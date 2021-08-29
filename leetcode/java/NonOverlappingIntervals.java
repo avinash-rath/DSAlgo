@@ -1,3 +1,7 @@
+package leetcode.java;
+
+import java.util.Arrays;
+
 /*
 Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
 
@@ -26,7 +30,7 @@ You may assume the interval's end point is always bigger than its start point.
 Intervals like [1,2] and [2,3] have borders "touching" but they don't overlap each other.
 */
 
-class Solution {
+class NonOverlappingIntervals {
     public int eraseOverlapIntervals(int[][] intervals) {
       Arrays.sort(intervals, (i1, i2) -> (i1[1]-i2[1]));
       

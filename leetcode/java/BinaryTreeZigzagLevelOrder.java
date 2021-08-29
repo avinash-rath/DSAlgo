@@ -1,3 +1,10 @@
+package leetcode.java;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /*
 Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
 
@@ -35,13 +42,12 @@ return its zigzag level order traversal as:
  *     }
  * }
  */
-class Solution {
+class BinaryTreeZigzagLevelOrder {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         if(root == null) {
             return new ArrayList<List<Integer>>();
         }
         int level = 0;
-        List<Integer> currLevel;
         Map<Integer, List<Integer>> levels = new HashMap<Integer, List<Integer>>();
         List<List<Integer>> ans = new ArrayList<List<Integer>>();
         level(root, levels, level);

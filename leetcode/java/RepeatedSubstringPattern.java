@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /*
 Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. You may assume the given string consists of lowercase English letters only and its length will not exceed 10000.
 
@@ -23,7 +25,7 @@ Explanation: It's the substring "abc" four times. (And the substring "abcabc" tw
 
 */
 
-class Solution {
+class RepeatedSubstringPattern {
     public boolean repeatedSubstringPattern(String s) {
         int n = s.length();
         for(int l = n/2; l > 0; l--) {

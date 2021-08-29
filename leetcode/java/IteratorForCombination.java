@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
 /*
 Design an Iterator class, which has:
 
@@ -25,11 +30,11 @@ There will be at most 10^4 function calls per test.
 It's guaranteed that all calls of the function next are valid.
 */
 
-class CombinationIterator {
+class IteratorForCombination {
     
     private Queue<String> queue;
     
-    public CombinationIterator(String characters, int combinationLength) {
+    public IteratorForCombination(String characters, int combinationLength) {
       queue = new LinkedList<String>();
       combinations(characters.toCharArray(), 0, new StringBuilder(), combinationLength);
     }

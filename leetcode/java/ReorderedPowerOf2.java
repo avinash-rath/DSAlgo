@@ -1,4 +1,6 @@
-class Solution {
+package leetcode.java;
+
+class ReorderedPowerOf2 {
     public boolean reorderedPowerOf2(int N) {
         
         String check = "", numString = Integer.toString(N);
@@ -28,6 +30,4 @@ class Solution {
         }
         return false;
     }
-}public class ReorderedPowerOf2 {
-    
 }

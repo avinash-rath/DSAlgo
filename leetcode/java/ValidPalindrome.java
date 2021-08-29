@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /*
 Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 
@@ -19,7 +21,7 @@ s consists only of printable ASCII characters.
 */
 
 
-class Solution {
+class ValidPalindrome {
     public boolean isPalindrome(String s) {
         StringBuilder str = new StringBuilder();
         for(char i: s.toCharArray()) {

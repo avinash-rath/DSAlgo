@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /*
 Given a pattern and a string s, find if s follows the same pattern.
 
@@ -40,7 +45,7 @@ Constraints:
 */
 
 
-class Solution {
+class WordPattern {
     public boolean wordPattern(String pattern, String s) {
         String [] table = new String[26];
         String [] strs = s.split(" ");

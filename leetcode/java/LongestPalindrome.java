@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /*
 Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
 
@@ -41,7 +46,6 @@ class Solution {
 class Solution {
     public int longestPalindrome(String s) {
       int ans = 0;
-      int odd = 0;
       Set<Character> set = new HashSet<Character>();
       for(char i : s.toCharArray()) {
         if(set.contains(i)) { set.remove(i); ans += 2; }

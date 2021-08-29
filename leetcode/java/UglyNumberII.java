@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 Write a program to find the n-th ugly number.
 
@@ -16,7 +21,7 @@ Note:
 
 */
 
-class Solution {
+class UglyNumberII {
     public int nthUglyNumber(int n) {
         if(n<=0) return n;
         List<Integer> ugly = new ArrayList<Integer>();

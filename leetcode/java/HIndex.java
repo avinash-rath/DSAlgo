@@ -1,3 +1,7 @@
+package leetcode.java;
+
+import java.util.Arrays;
+
 /*
 Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.
 
@@ -14,7 +18,7 @@ Explanation: [3,0,6,1,5] means the researcher has 5 papers in total and each of 
 Note: If there are several possible values for h, the maximum one is taken as the h-index.
 */
 
-class Solution {
+class HIndex {
     public int hIndex(int[] c) {
         // if(c.length==1) return c[0] >0 ? 1 : 0;
         int ans = 0;

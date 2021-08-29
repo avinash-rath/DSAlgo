@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /*
 Implement the StreamChecker class as follows:
 
@@ -33,11 +38,11 @@ The number of queries is at most 40000.
 
 
 
-class StreamChecker {
+class StreamOfCharacters {
     
     Trie root;
     StringBuilder sb;
-    public StreamChecker(String[] words) {
+    public StreamOfCharacters(String[] words) {
       root = new Trie();
       sb = new StringBuilder();
       for(String w : words) { insert(w); }
@@ -59,7 +64,7 @@ class StreamChecker {
       boolean isWord;
       
       public Trie() {
-        next = new HashMap();
+        next = new HashMap<>();
       }
     }
     private void insert(String word) {

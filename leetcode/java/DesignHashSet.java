@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 Design a HashSet without using any built-in hash table libraries.
 
@@ -30,7 +35,7 @@ Please do not use the built-in HashSet library.
 stupid solution
 class MyHashSet {
     boolean [] a;
-    /** Initialize your data structure here. */
+    // Initialize your data structure here.
     public MyHashSet() {
         a = new boolean [1000001];
     }
@@ -43,7 +48,7 @@ class MyHashSet {
         a[key] = false;
     }
     
-    /** Returns true if this set contains the specified element */
+    // Returns true if this set contains the specified element 
     public boolean contains(int key) {
         return a[key];
     }
@@ -53,15 +58,15 @@ class MyHashSet {
 
 
 
-/*
-class MyHashSet {
+
+class DesignHashSet {
     private List<Integer> [] hashset;
-    /** Initialize your data structure here. */
+    // Initialize your data structure here. /
     static int capacity = 2000;
     private int hash(int number) {
       return number%capacity;
     }
-    public MyHashSet() {
+    public DesignHashSet() {
         hashset = new List[capacity];
     }
     
@@ -83,7 +88,7 @@ class MyHashSet {
       hashset[k].remove(new Integer(key));
     }
     
-    /** Returns true if this set contains the specified element */
+    // Returns true if this set contains the specified element//
     public boolean contains(int key) {
       int k = hash(key);
       if(hashset[k] == null) return false;
@@ -99,5 +104,3 @@ class MyHashSet {
  * boolean param_3 = obj.contains(key);
  */
 
-
-*/

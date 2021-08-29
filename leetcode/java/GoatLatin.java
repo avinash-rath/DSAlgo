@@ -1,3 +1,9 @@
+package leetcode.java;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 /*
 A sentence S is given, composed of words separated by spaces. Each word consists of lowercase and uppercase letters only.
 
@@ -33,7 +39,7 @@ S contains only uppercase, lowercase and spaces. Exactly one space between each 
 1 <= S.length <= 150.
 */
 
-class Solution {
+class GoatLatin {
     public String toGoatLatin(String S) {
       StringBuilder ans = new StringBuilder();
       StringBuffer ma = new StringBuffer("ma");

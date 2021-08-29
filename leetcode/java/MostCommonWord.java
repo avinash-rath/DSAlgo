@@ -1,3 +1,12 @@
+package leetcode.java;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 /*
 819. Most Common Word
 Easy
@@ -39,7 +48,7 @@ Submissions
 397,106
 */
 
-class Solution {
+class MostCommonWord {
     public String mostCommonWord(String paragraph, String[] ban) {
         
         Set<Character> puncts = new HashSet<>();

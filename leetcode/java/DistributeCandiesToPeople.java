@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /**
 We distribute some number of candies, to a row of n = num_people people in the following way:
 
@@ -38,7 +40,7 @@ Constraints:
 */
 
 
-class Solution {
+class DistributeCandiesToPeople {
     public int[] distributeCandies(int candies, int num_people) {
       int [] ans = new int[num_people]; 
       int ctr = 1, i =0;

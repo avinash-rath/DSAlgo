@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /*
 Given a column title as appear in an Excel sheet, return its corresponding column number.
 
@@ -32,7 +34,7 @@ s consists only of uppercase English letters.
 s is between "A" and "FXSHRXW".
 */
 
-class Solution {
+class ExcelSheetColumnNumber {
     public int titleToNumber(String s) {
       int base = 26;
       int factor = 0;

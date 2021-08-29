@@ -1,5 +1,7 @@
 package swiggy;
 
+import java.util.PriorityQueue;
+
 /**
  * Minimize the sum calculated by repeatedly removing any two elements and inserting their sum to the Array
 Difficulty Level : Easy

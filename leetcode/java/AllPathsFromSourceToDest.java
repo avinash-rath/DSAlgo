@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 Given a directed, acyclic graph of N nodes.  Find all possible paths from node 0 to node N-1, and return them in any order.
 
@@ -18,7 +23,7 @@ The number of nodes in the graph will be in the range [2, 15].
 You can print different paths in any order, but you should keep the order of nodes inside one path.
 */
 
-class Solution {
+class AllPathsFromSourceToDest {
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
       List<List<Integer>> ans = new ArrayList<List<Integer>>();
       List<Integer> path = new ArrayList<Integer>();

@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /*
 200. Number of Islands
 Medium
@@ -32,7 +34,7 @@ Submissions
 1,738,553
 */
 
-class Solution {
+class NumberOfIslands {
     public int numIslands(char[][] grid) {
         int ans = 0;
         for(int i = 0; i < grid.length; i++) {

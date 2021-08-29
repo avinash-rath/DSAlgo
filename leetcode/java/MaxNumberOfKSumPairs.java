@@ -1,3 +1,7 @@
+package leetcode.java;
+
+import java.util.Arrays;
+
 /*
 You are given an integer array nums and an integer k.
 

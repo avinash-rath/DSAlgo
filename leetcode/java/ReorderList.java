@@ -1,3 +1,7 @@
+package leetcode.java;
+
+import java.util.Stack;
+
 /* Given a singly linked list L: L0→L1→…→Ln-1→Ln,
 reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
 
@@ -23,7 +27,7 @@ Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+class ReorderList {
     public void reorderList(ListNode head) {
         if(head==null) return;
         Stack<ListNode> st = new Stack<ListNode>();

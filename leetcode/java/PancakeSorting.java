@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 Given an array of integers A, We need to sort the array performing a series of pancake flips.
 
@@ -38,7 +43,7 @@ Constraints:
 All integers in A are unique (i.e. A is a permutation of the integers from 1 to A.length).
 */
 
-class Solution {
+class PancakeSorting {
     public List<Integer> pancakeSort(int[] A) {
       List<Integer> ans = new ArrayList<>();
       for(int i = A.length; i > 0; i--) {

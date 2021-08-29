@@ -1,3 +1,5 @@
+package leetcode.java;
+
 /*
 Given a 2D board and a word, find if the word exists in the grid.
 
@@ -28,7 +30,7 @@ Constraints:
 
 */
 
-class Solution {
+class WordSearch {
     public boolean exist(char[][] board, String word) {
         boolean[][] visited = new boolean[board.length][board[0].length];
         for(int i = 0; i < board.length; i++) {

@@ -1,3 +1,8 @@
+package leetcode.java;
+
+import java.util.Arrays;
+import java.util.List;
+
 /*
 Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.
 
@@ -14,7 +19,7 @@ Follow up:
 
 Could you optimize your algorithm to use only O(k) extra space?
 */
-class Solution {
+class PascalsTriangleII {
   /*
     Combinatorics -> 
     nth row of pascal's triangle is NC0 NC1 NC2 NC3 ..... NC(N-2) NC(N-1) NCN
