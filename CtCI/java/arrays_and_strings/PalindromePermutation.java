@@ -1,4 +1,4 @@
-package arrays_and_strings;
+package CtCI.java.arrays_and_strings;
 
 import java.util.*;
 

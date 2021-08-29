@@ -1,4 +1,4 @@
-package linked_lists;
+package CtCI.java.linked_lists;
 
 public class Node<T> {
     public T data;

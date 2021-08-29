@@ -1,4 +1,4 @@
-package linked_lists;
+package CtCI.java.linked_lists;
 /**
  * 2.2
  * Return kth to last : Implement an algorithm to implement kth to last element of a singly linked list.

@@ -1,4 +1,4 @@
-package arrays_and_strings;
+package CtCI.java.arrays_and_strings;
 
 /**
  * 1.5 There are three types of edits that can be performed on strings: insert a

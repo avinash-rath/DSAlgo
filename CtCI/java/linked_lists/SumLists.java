@@ -1,4 +1,4 @@
-package linked_lists;
+package CtCI.java.linked_lists;
 /**
  * 2.5 
  * Sum Lists: You have two numbers represented by a linked list, where each node contains a single digit. 

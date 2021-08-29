@@ -1,4 +1,4 @@
-package arrays_and_strings;
+package CtCI.java.arrays_and_strings;
 
 /**
  * 1.3 URLify Write a method to replace all spaces in a string with "%20". You

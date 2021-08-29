@@ -1,4 +1,4 @@
-package arrays_and_strings;
+package CtCI.java.arrays_and_strings;
 
 /**
  * 1.6 Implement a method to perform basic string compression using the counts

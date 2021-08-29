@@ -1,4 +1,4 @@
-package arrays_and_strings;
+package CtCI.java.arrays_and_strings;
 
 /**
  * 1.7 Given an image represented by an NxN matrix, where each pixel in the
