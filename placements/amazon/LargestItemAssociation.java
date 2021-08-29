@@ -28,8 +28,7 @@
     Output:
     [item3, item4, item5]
 */
-
-package amazon;
+package placements.amazon;
 
 import java.util.*;
 

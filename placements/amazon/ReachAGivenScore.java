@@ -1,4 +1,4 @@
-package amazon;
+package placements.amazon;
 /*
 
 Reach a given score

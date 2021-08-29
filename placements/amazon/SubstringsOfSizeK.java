@@ -1,5 +1,4 @@
-
-package amazon;
+package placements.amazon;
 
 import java.util.*;
 /**
