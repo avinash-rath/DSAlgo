@@ -1,5 +1,6 @@
 package leetcode.java;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -39,4 +40,21 @@ class PascalsTriangleII {
         }
       return Arrays.asList(ans);
     }
+
+    public List<Integer> getRowRecursive(int rowIndex) {
+      if(rowIndex == 0) {
+          return Arrays.asList(new Integer [] {1});
+      }
+      if(rowIndex == 1) {
+          return Arrays.asList(new Integer [] {1,1});
+      }
+      List<Integer> lastRow = getRowRecursive(rowIndex - 1);
+      List<Integer> ans = new ArrayList<>();
+      ans.add(1);
+      for(int i = 1; i < rowIndex; i++) {
+          ans.add(lastRow.get(i) + lastRow.get(i-1));  
+      }
+      ans.add(1);
+      return ans;
+  }
 }
