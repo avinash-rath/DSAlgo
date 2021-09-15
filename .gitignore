@@ -1,6 +1,8 @@
 # Output files
 *.class
 
+*.xlsx
+
 #settings
 settings.json
 
